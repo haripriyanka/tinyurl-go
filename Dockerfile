@@ -11,4 +11,4 @@ RUN apk --no-cache add ca-certificates libc6-compat
 WORKDIR /tinyurl/
 COPY --from=build-stage /tinyurl/tinyurl .
 EXPOSE 8080
-CMD ["/tinyurl"]
+CMD ["./tinyurl"]
